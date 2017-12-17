@@ -1,11 +1,9 @@
 library(tidyverse)
 library(plotly)
-library(ggdendro)
 library(RColorBrewer)
-library(dendextend)
-library(ggdendro)
-library(shinythemes)
+library(ggplot2)
 
-# setwd("/Users/itoshi/Projects/gdeg/SVF/All_DEG")
-# load("/Users/itoshi/Projects/gdeg/SVF/All_DEG/exp.rda")
+library(ggdendro)
+library(dendextend)
+
 load("data/exp2.rda")
