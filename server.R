@@ -2,17 +2,12 @@ library(shiny)
 
 source("helpers.R")
 load("data/exp2.rda")
-# setwd("/Users/itoshi/Projects/gdeg/SVF/All_DEG")
 
-# Define server logic required to draw a histogram
 server = function(input, output, session) {
 
   ##################################################
   ## Heatmap of cluster average with dendrogram
   output$heatplot = renderPlotly({
-    # plotly::subplot(heatmap.plotly, py, nrows = 1, margin = 0.01) %>%
-    #  layout(xaxis = list(title = "Gene"), 
-    #         yaxis = list(title = "Cluster"))
     my.hover.mat = matrix(
       paste(
         paste0("Class: ", cls.types),
