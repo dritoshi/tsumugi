@@ -1,0 +1,11 @@
+library(tidyverse)
+library(plotly)
+library(ggdendro)
+library(RColorBrewer)
+library(dendextend)
+library(ggdendro)
+library(shinythemes)
+
+# setwd("/Users/itoshi/Projects/gdeg/SVF/All_DEG")
+# load("/Users/itoshi/Projects/gdeg/SVF/All_DEG/exp.rda")
+load("data/exp2.rda")
